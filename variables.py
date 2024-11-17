@@ -55,3 +55,46 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
+
+#   OUTPUT VARIABLES
+x = "python is owesome"
+print(x)
+x = "Python"
+y = "is"
+z = "foine"
+print(x, y, z)
+#  we can use + instead
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+# Python - Global Variables
+# Variables that are created outside of a function
+# Example
+# Create a variable outside of a function, and use it inside the function
+
+x = "foine"
+
+
+def myfunc():
+    print("Python is " + x)
+
+
+myfunc()
+
+"""If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value."""
+
+# Example
+
+x = "awesome"
+
+
+def myfunc():
+    x = "fantastic"
+    print("Python is " + x)
+
+
+myfunc()
+
+print("Python is " + x)
