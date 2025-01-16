@@ -1,5 +1,5 @@
 """
-This script will implent our kn ow knowledge on comditiond and different 
+This script will implent our kn ow knowledge on comditiond and different
 data types
 """
 
@@ -11,7 +11,8 @@ DevOps = ["Jenkins", "Ainsible", "Bash", "Python", "Puppet", "Docker"]
 Development = ("Nodejs", "Angularjs", ".net")
 cntr_emp1 = {"Name": "Santa", "skills": "Blockchain", "code": "1024"}
 cntr_emp2 = {"Name": "Manzi", "skills": "AI", "code": "1018"}
-
+usr_name = input("Enter Your Name: ")
+print(f"Hi {usr_name}")
 usr_skill = input("Enter Your desired skill: ")
 # print(usr_skill)
 
@@ -29,3 +30,4 @@ elif (usr_skill in cntr_emp1.values()) or (usr_skill in cntr_emp2.values()):
 else:
     print("Skill not found")
     print("Please check your spellings")
+    print(f"Please check your spellings Mr/Mrs {usr_name}")
