@@ -21,6 +21,7 @@ Lucky = random.choice(VACCINES)
 print(Lucky)
 
 for vac in VACCINES:
+    print(vac)
     if vac == Lucky:
         print(f"{Lucky} vaccine, passed the Test")
-        break
+        continue
